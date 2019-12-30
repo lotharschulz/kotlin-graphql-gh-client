@@ -6,7 +6,7 @@ Contributions are welcome, and they are greatly appreciated.
 
 ## Report Issues
 
-Report issues at [GitHub Issues](https://github.com/lotharschulz/____/issues)
+Report issues at [GitHub Issues](https://github.com/lotharschulz/kotlin-graphql-gh-client/issues)
 
 If you are reporting a bug, please include:
 
