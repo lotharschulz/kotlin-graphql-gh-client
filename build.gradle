@@ -9,7 +9,7 @@ mainClassName = 'info.ls.graphql.QueryKt'
 
 
 buildscript {
-    ext.kotlin_version = '1.3.20'
+    ext.kotlin_version = '1.3.61'
     repositories {
         jcenter()
         mavenCentral()
