@@ -38,12 +38,12 @@ fun main(args: Array<String>) {
         println("Please provide at least 2 command line arguments:")
         println("1. Github (Enterprise) GraphQL API endpoint")         // args[0]
         println("2. Github personal access token")                     // args[1]
-        println("3. optional graphql json query ")
+        println("3. Github graphql json query or file")                       // args[2 ....]
         println("Usage: gradle run -Dexec.args=\"{graphql endpoint} {personal access token}\"")
         println("example:")
         println("$ export GHTOKEN=<your github personal access token>")
         println("$ gradle run -Dexec.args=\"https://api.github.com/graphql \$GHTOKEN\"")
         return
     }
-    if (args.size == 3) query(args[0], args[1], args[2]) else query(args[0], args[1]) 
+    if (args.size > 2) query(args[0], args[1], args.slice(2 until args.size).joinToString(" ")) else query(args[0], args[1])
 }

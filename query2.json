@@ -1,0 +1,4 @@
+{
+  "query": "query ($tpe: PinnableItemType!) { viewer { login bio anyPinnableItems(type: $tpe)}}",
+  "variables": { "tpe": "GIST" }
+}
