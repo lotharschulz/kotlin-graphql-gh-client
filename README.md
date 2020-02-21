@@ -11,7 +11,7 @@ You may use this code as inspiration for ([Github's](https://developer.github.co
 
 ### Usage
 ```
-$ export GHTOKEN=<your github personal access token>
+export GHTOKEN=<your github personal access token>
 ```
 
 ##### No graphql query provided, default [kgraph](https://github.com/lotharschulz/kotlin-graphql-gh-client/blob/master/src/main/kotlin/info/ls/graphql/Query.kt#L8-L22) applies
