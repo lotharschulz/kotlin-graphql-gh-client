@@ -29,8 +29,7 @@ fun query(url: String, bearerToken: String, query: String = ""){
             .authentication().bearer(bearerToken)
             .jsonBody(request)
             .responseString()
-    result.fold({ value -> println(value)  },
-            { error -> println("Error: \n$error\n") })        
+    result.fold({ println(it) },{ error -> println("Error: \n$error\n") })        
 }
 
 fun main(args: Array<String>) {
